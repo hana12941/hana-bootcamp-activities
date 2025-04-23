@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Activity 1</title>
+  <style>
+    body {
+      background-color: #fefae0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 48px;
+      text-align: center;
+      color: #606c38;
+      margin-top: 40px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+
+    legend {
+      font-size: 20px;
+      color: #283618;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 5px;
+      color: #333;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      color: #333;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .radio-inline {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    ::placeholder {
+      color: #aaa;
+    }
+
+    input[type=submit],
+    input[type=reset] {
+      width: 48%;
+      padding: 10px;
+      background-color: #a3b18a;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type=submit]:hover,
+    input[type=reset]:hover {
+      background-color: #588157;
+    }
+
+    input[type=reset] {
+      background-color: #d4a373;
+    }
+
+    input[type=reset]:hover {
+      background-color: #bc6c25;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1><b>Form</b></h1>
+
+  <form action="/action_page.php">
+
+    <fieldset>
+      <legend>Personal Information:</legend>
+
+      <label for="fname"><b>First Name:</b></label>
+      <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+
+      <label for="mname"><b>Middle Name:</b></label>
+      <input type="text" id="mname" name="mname" placeholder="Enter Middle Name" required>
+
+      <label for="lname"><b>Last Name:</b></label>
+      <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+
+      <label for="email"><b>Email Address:</b></label>
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+      <label for="cnum"><b>Contact Number:</b></label>
+      <input type="text" id="cnum" name="cnum" placeholder="Enter Contact Number" required>
+
+      <label><b>Gender:</b></label>
+      <label class="radio-inline"><input type="radio" name="optradio" checked> Female</label>
+      <label class="radio-inline"><input type="radio" name="optradio"> Male</label>
+
+      <label for="quantity"><b>Age:</b></label>
+      <input type="number" id="quantity" name="quantity" placeholder="Enter Your Age" required>
+
+      <label for="Birthdate"><b>Birthdate:</b></label>
+      <input type="date" id="Birthdate" name="Birthdate" required>
+
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </fieldset>
+
+  </form>
+
+</body>
+
+</html>
